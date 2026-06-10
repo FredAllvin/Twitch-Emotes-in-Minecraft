@@ -15,8 +15,10 @@ Animated GIF emotes are supported and play with their real frame timing. Emotes 
 ## Installation
 
 1. Install [Fabric Loader](https://fabricmc.net/use/installer/) (0.19.2+) for Minecraft 1.21.11
-2. Drop [Fabric API](https://modrinth.com/mod/fabric-api) and `chatmod-x.x.x.jar` into your `mods` folder
+2. Download the **[latest chatmod jar](https://github.com/FredAllvin/Twitch-Emotes-in-Minecraft/releases/latest)** and drop it, together with [Fabric API](https://modrinth.com/mod/fabric-api), into your `mods` folder
 3. Launch the game — emotes load in the background and start rendering once ready
+
+> First launch downloads a few thousand emote images, so chat emotes can take a couple of minutes to appear. After that they load from cache.
 
 The mod is fully client-side; it works on any server.
 
