@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "chatmod",
+	"version": "${version}",
+	"name": "ChatMod",
+	"description": "Twitch emotes for chat, currently will only work with Forsens twitch emotes (7TV included)",
+	"authors": [
+		"bertilQ"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod" //add later
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chatmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.personal.ChatMod"
+		],
+		"client": [
+			"com.personal.client.ChatModClient"
+		]
+	},
+	"mixins": [
+		"chatmod.mixins.json",
+		{
+			"config": "chatmod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
